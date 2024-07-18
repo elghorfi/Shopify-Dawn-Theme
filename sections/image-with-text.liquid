@@ -61,7 +61,7 @@
               {% endif %}
             {% else %}
               {%- if section.settings.video != blank -%}
-                <video autoplay loop muted playsinline defaultmuted height="100%" width='100%' {% if section.settings.object_fit %}style="object-fit: cover;  object-position: center center;"{% endif %}>
+                <video autoplay loop muted playsinline defaultmuted preload="none" height="100%" width='100%' {% if section.settings.object_fit %}style="object-fit: cover;  object-position: center center;"{% endif %}>
                   {% for video in section.settings.video.sources %}
                     <source src="{{ video.url }}" type="{{ video.mime_type }}" id="{{ section.id }}-{{ forloop.index }}">
                   {% endfor %}
