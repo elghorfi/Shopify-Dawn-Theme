@@ -1108,6 +1108,9 @@ summary::-webkit-details-marker {
   width: 100%;
 }
 
+.media > video {
+  transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
 .media > img {
   object-fit: cover;
   object-position: center center;
@@ -1199,7 +1202,7 @@ button.shopify-payment-button__button--unbranded {
 
 .cart__dynamic-checkout-buttons iframe {
   box-shadow: var(--shadow-horizontal-offset) var(--shadow-vertical-offset) var(--shadow-blur-radius)
-    rgba(var(--color-shadow), var(--shadow-opacity));
+  rgba(var(--color-shadow), var(--shadow-opacity));
 }
 
 .button,
@@ -1236,7 +1239,7 @@ button.shopify-payment-button__button--unbranded {
   z-index: -1;
   border-radius: var(--buttons-radius-outset);
   box-shadow: var(--shadow-horizontal-offset) var(--shadow-vertical-offset) var(--shadow-blur-radius)
-    rgba(var(--color-shadow), var(--shadow-opacity));
+  rgba(var(--color-shadow), var(--shadow-opacity));
 }
 
 .button:after,
@@ -1252,8 +1255,8 @@ button.shopify-payment-button__button--unbranded {
   z-index: 1;
   border-radius: var(--buttons-radius);
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
-      rgba(var(--color-button-text), var(--border-opacity)),
-    0 0 0 var(--buttons-border-width) rgba(var(--color-button), var(--alpha-button-background));
+  rgba(var(--color-button-text), var(--border-opacity)),
+  0 0 0 var(--buttons-border-width) rgba(var(--color-button), var(--alpha-button-background));
   transition: box-shadow var(--duration-short) ease;
 }
 
@@ -1263,8 +1266,8 @@ button.shopify-payment-button__button--unbranded {
 .shopify-payment-button__button--unbranded:hover::after {
   --border-offset: 1.3px;
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
-      rgba(var(--color-button-text), var(--border-opacity)),
-    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background));
+  rgba(var(--color-button-text), var(--border-opacity)),
+  0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background));
 }
 
 .button--secondary:after {
@@ -1280,7 +1283,7 @@ button.shopify-payment-button__button--unbranded {
 .shopify-payment-button [role='button']:focus {
   outline: 0;
   box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0 0.5rem rgba(var(--color-foreground), 0.5),
-    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
+  0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
 }
 
 .button:focus:not(:focus-visible):not(.focused),
@@ -1444,7 +1447,7 @@ details[open] > .share-button__fallback {
   left: 0;
   border-radius: var(--inputs-radius-outset);
   box-shadow: var(--inputs-shadow-horizontal-offset) var(--inputs-shadow-vertical-offset)
-    var(--inputs-shadow-blur-radius) rgba(var(--color-shadow), var(--inputs-shadow-opacity));
+  var(--inputs-shadow-blur-radius) rgba(var(--color-shadow), var(--inputs-shadow-opacity));
   z-index: -1;
 }
 
@@ -1585,7 +1588,7 @@ details[open] > .share-button__fallback {
   left: 0;
   border-radius: var(--inputs-radius-outset);
   box-shadow: var(--inputs-shadow-horizontal-offset) var(--inputs-shadow-vertical-offset)
-    var(--inputs-shadow-blur-radius) rgba(var(--color-shadow), var(--inputs-shadow-opacity));
+  var(--inputs-shadow-blur-radius) rgba(var(--color-shadow), var(--inputs-shadow-opacity));
   z-index: -1;
 }
 
@@ -1623,7 +1626,7 @@ details[open] > .share-button__fallback {
 .customer select:hover.select:after,
 .localization-form__select:hover.localization-form__select:after {
   box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width))
-    rgba(var(--color-foreground), var(--inputs-border-opacity));
+  rgba(var(--color-foreground), var(--inputs-border-opacity));
   outline: 0;
   border-radius: var(--inputs-radius);
 }
@@ -1893,7 +1896,7 @@ input[type='checkbox'] {
   left: 0;
   border-radius: var(--inputs-radius-outset);
   box-shadow: var(--inputs-shadow-horizontal-offset) var(--inputs-shadow-vertical-offset)
-    var(--inputs-shadow-blur-radius) rgba(var(--color-shadow), var(--inputs-shadow-opacity));
+  var(--inputs-shadow-blur-radius) rgba(var(--color-shadow), var(--inputs-shadow-opacity));
   z-index: -1;
 }
 
@@ -2815,7 +2818,7 @@ details[open] > .header__menu-item .icon-caret {
   border-style: solid;
   border-width: var(--popup-border-width);
   box-shadow: var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius)
-    rgba(var(--color-shadow), var(--popup-shadow-opacity));
+  rgba(var(--color-shadow), var(--popup-shadow-opacity));
   z-index: -1;
 }
 
@@ -2947,7 +2950,7 @@ details-disclosure > details {
   left: calc(var(--text-boxes-border-width) * -1);
   border-radius: var(--text-boxes-radius);
   box-shadow: var(--text-boxes-shadow-horizontal-offset) var(--text-boxes-shadow-vertical-offset)
-    var(--text-boxes-shadow-blur-radius) rgba(var(--color-shadow), var(--text-boxes-shadow-opacity));
+  var(--text-boxes-shadow-blur-radius) rgba(var(--color-shadow), var(--text-boxes-shadow-opacity));
   z-index: -1;
 }
 
@@ -2985,7 +2988,7 @@ details-disclosure > details {
   left: calc(var(--media-border-width) * -1);
   border-radius: var(--media-radius);
   box-shadow: var(--media-shadow-horizontal-offset) var(--media-shadow-vertical-offset) var(--media-shadow-blur-radius)
-    rgba(var(--color-shadow), var(--media-shadow-opacity));
+  rgba(var(--color-shadow), var(--media-shadow-opacity));
   z-index: -1;
   pointer-events: none;
 }
@@ -3127,7 +3130,7 @@ details-disclosure > details {
   border: var(--media-border-width) solid rgba(var(--color-foreground), var(--media-border-opacity));
   border-radius: var(--media-radius);
   box-shadow: var(--media-shadow-horizontal-offset) var(--media-shadow-vertical-offset) var(--media-shadow-blur-radius)
-    rgba(var(--color-shadow), var(--media-shadow-opacity));
+  rgba(var(--color-shadow), var(--media-shadow-opacity));
   margin-bottom: var(--media-shadow-vertical-offset);
 }
 
@@ -3322,7 +3325,7 @@ details-disclosure > details {
     transition: transform var(--duration-extended) ease, box-shadow var(--duration-long) ease; /* Slow the card transition speed while hover is active. */
     transform: rotate(1deg);
     box-shadow: -1rem -1rem 1rem -1rem rgba(0, 0, 0, 0.05), 1rem 1rem 1rem -1rem rgba(0, 0, 0, 0.05),
-      0 0 0.5rem 0 rgba(255, 255, 255, 0), 0 2rem 3.5rem -2rem rgba(0, 0, 0, 0.5);
+    0 0 0.5rem 0 rgba(255, 255, 255, 0), 0 2rem 3.5rem -2rem rgba(0, 0, 0, 0.5);
   }
 
   .animate--hover-3d-lift .deferred-media:hover .deferred-media__poster-button {
@@ -3359,10 +3362,10 @@ details-disclosure > details {
   .animate--hover-3d-lift .card-wrapper:hover .card--card:after,
   .animate--hover-3d-lift .card-wrapper:hover .card--standard .card__inner:after,
   .animate--hover-3d-lift
-    .card-wrapper:hover
-    .card--shape.card--standard:not(.card--text)
-    .card__inner
-    .card__media:before {
+  .card-wrapper:hover
+  .card--shape.card--standard:not(.card--text)
+  .card__inner
+  .card__media:before {
     background-image: var(--easter-egg);
     background-size: 250px 250px;
     mix-blend-mode: color-dodge;
@@ -3371,10 +3374,10 @@ details-disclosure > details {
   }
 
   .animate--hover-3d-lift
-    .card-wrapper:hover
-    .card--shape.card--standard:not(.card--text)
-    .card__inner
-    .card__media:before {
+  .card-wrapper:hover
+  .card--shape.card--standard:not(.card--text)
+  .card__inner
+  .card__media:before {
     content: '';
     position: absolute;
     top: 0;
@@ -3399,10 +3402,10 @@ details-disclosure > details {
     background-position: 90% 0;
     background-repeat: no-repeat;
     background-image: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0) 45%,
-      rgba(255, 255, 255, 1) 50%,
-      rgba(255, 255, 255, 0) 55%
+            135deg,
+            rgba(255, 255, 255, 0) 45%,
+            rgba(255, 255, 255, 1) 50%,
+            rgba(255, 255, 255, 0) 55%
     );
   }
 
@@ -3460,8 +3463,8 @@ details-disclosure > details {
   .animate--hover-vertical-lift .shopify-payment-button__button:not([disabled]):hover:after {
     --border-offset: 0.3px; /* Default is 1.3px as defined above in this file. This removes 1px to prevent the border from growing on buttons when this effect is on.  */
     box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
-        rgba(var(--color-button-text), var(--border-opacity)),
-      0 0 0 var(--buttons-border-width) rgba(var(--color-button), var(--alpha-button-background));
+    rgba(var(--color-button-text), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--color-button), var(--alpha-button-background));
   }
 
   .animate--hover-vertical-lift .button:not([disabled]).button--secondary:hover:after {
